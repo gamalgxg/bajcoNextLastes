@@ -13,7 +13,7 @@ banner:
 
 featured_posts:
   enable: true
-  title: مغاسل الرخام
+  title: خدماتنا
 
 promotion:
   enable: true
@@ -21,6 +21,6 @@ promotion:
   link: "#"
 
 recent_posts:
-  title: Recent Posts
+  title: المضافة أخيرا
   enable: true
 ---

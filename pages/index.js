@@ -19,10 +19,10 @@ const data = [
   {
     id: 1,
     title: "تفصيل مغاسل رخام ",
-    url: "#",
+    url: "posts",
     btn: "شاهد المزيد..",
     icon: "IoTabletLandscapeOutline",
-    desc: "إبتكار تصميمات داخلية فريدة وأنيقة تبرز أفضل ما في منزلك أو مكتبك, من الديكورات الداخلية إلى تصميم لوحات التلفزيون وتصميم الحمامات الرئيسية",
+    desc: "تفصيل مغاسل رخام فخمة بجودة عالية مع الضمان لمدة خمس سنوات مع الخشب والمرايا بأيدي فنيين متخصصين في هذا المجال.",
   },
   {
     id: 2,
@@ -125,8 +125,12 @@ const Home = ({
             <div className="mb-12 lg:col-8 lg:mb-0">
               {/* Featured posts */}
               {featured_posts.enable && (
-                <div className="section">
-                  {markdownify(featured_posts.title, "h2", "section-title")}
+                <div className="section ">
+                  {markdownify(
+                    featured_posts.title,
+                    "h2",
+                    "section-title text-center"
+                  )}
                   <div className="rounded dark:border-darkmode-border">
                     <div className="row">
                       {data.map((e) => (
@@ -207,7 +211,11 @@ const Home = ({
               {/* Recent Posts */}
               {recent_posts.enable && (
                 <div className="section pt-0">
-                  {markdownify(recent_posts.title, "h2", "section-title")}
+                  {markdownify(
+                    recent_posts.title,
+                    "h2",
+                    "section-title text-center"
+                  )}
                   <div className="rounded  dark:border-darkmode-border">
                     <div className="row">
                       {sortPostByDate.slice(0, showPosts).map((post) => (

@@ -1,6 +1,5 @@
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
-import { BsArrowRightShort } from "react-icons/bs";
 import { FaEnvelope, FaMapMarkerAlt, FaUserAlt } from "react-icons/fa";
 import ImageFallback from "./components/ImageFallback";
 
@@ -26,12 +25,11 @@ const Contact = ({ data }) => {
               "h1 my-10 lg:my-11 lg:pt-11 text-center lg:text-left lg:text-[64px]"
             )}
           </div>
-          <div className="contact-form-wrapper rounded border border-border p-6 dark:border-darkmode-border lg:col-6">
+          <div className="contact-form-wrapper rounded border border-border p-6 lg:col-6 dark:border-darkmode-border">
             <h2>
-              Send Us A
+              ارسال
               <span className="ml-1.5 inline-flex items-center text-primary">
-                Message
-                <BsArrowRightShort />
+                رسالة
               </span>
             </h2>
             <form
@@ -41,7 +39,7 @@ const Contact = ({ data }) => {
             >
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="name">
-                  Full name
+                  الاسم:
                   <small className="font-secondary text-sm text-primary">
                     *
                   </small>
@@ -50,13 +48,13 @@ const Contact = ({ data }) => {
                   className="form-input w-full"
                   name="name"
                   type="text"
-                  placeholder="Thomas Milano"
+                  placeholder="اسمك الكامل"
                   required
                 />
               </div>
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="email">
-                  Email Address
+                  ايميلك
                   <small className="font-secondary text-sm text-primary">
                     *
                   </small>
@@ -71,7 +69,7 @@ const Contact = ({ data }) => {
               </div>
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="subject">
-                  Subject
+                  الموضوع
                   <small className="font-secondary text-sm text-primary">
                     *
                   </small>
@@ -80,27 +78,27 @@ const Contact = ({ data }) => {
                   className="form-input w-full"
                   name="subject"
                   type="text"
-                  placeholder="Blog advertisement"
+                  placeholder="استفسار عن مغاسل رخام"
                   required
                 />
               </div>
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="message">
-                  Your Message Here
+                  رسالتك هنا
                   <small className="font-secondary text-sm text-primary">
                     *
                   </small>
                 </label>
                 <textarea
                   className="form-textarea w-full"
-                  placeholder="Hello I’m Mr ‘x’ from………….."
+                  placeholder="مرحبا ,, اريد الاستفسار عن الرابط ادناه"
                   rows="7"
                 />
               </div>
               <input
                 className="btn btn-primary"
                 type="submit"
-                value="Send Now"
+                value="ارسال الان"
               />
             </form>
           </div>
