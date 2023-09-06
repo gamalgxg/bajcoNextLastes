@@ -1,0 +1,45 @@
+{
+  "main": [
+    {
+      "name": "الرئيسية",
+      "url": "/"
+    },
+    {
+      "name": "من نحن",
+      "url": "/about"
+    },
+    {
+      "name": "صفحة",
+      "url": "/#"
+    },
+    {
+      "name": "اتصل بنا",
+      "url": "/contact"
+    },
+    {
+      "name": "صفحات",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "التصنيفات",
+          "url": "/categories"
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "name": "الرئيسية",
+      "url": "/"
+    },
+    {
+      "name": "من نحن",
+      "url": "/about"
+    },
+    {
+      "name": "اتصل بنا",
+      "url": "/contact"
+    }
+  ]
+}

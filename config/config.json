@@ -1,0 +1,60 @@
+{
+  "site": {
+    "title": "باجكو",
+    "base_url": "/",
+    "favicon": "/images/favicon.png",
+    "logo": "/images/bajco_black.png",
+    "logo_white": "/images/bajco_white.png",
+    "logo_width": "200",
+    "logo_height": "60",
+    "logo_text": "باجكو"
+  },
+  "settings": {
+    "theme_switcher": true,
+    "default_theme": "system",
+    "pagination": 6,
+    "InnerPaginationOptions": {
+      "enableTop": false,
+      "enableBottom": true
+    },
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+  "params": {
+    "tag_manager_id": "",
+    "footer_content": "للديكورات والمغاسل الرخامية, تصميم وتنفيذ",
+    "copyright": "تصميم باجكو"
+  },
+  "metadata": {
+    "meta_author": "Statichunt",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Geeky Nextjs Personal Blog Template"
+  },
+  "widgets": {
+    "about": {
+      "enable": true,
+      "content": "تصميم وتفصيل مغاسل رخام فخمه حسب التصميم المطلوب مع المرايا والخشب."
+    },
+    "featured_posts": {
+      "enable": true,
+      "title": "Blog Categories",
+      "showPost": 3
+    },
+    "categories": {
+      "enable": true,
+      "title": "Blog Categories"
+    },
+    "newsletter": {
+      "enable": true,
+      "title": "Newsletter",
+      "content": "Join thousands of Tiny Salt subscribers and get our best recipes delivered each week!",
+      "privacy_policy_page": "#",
+      "malichipm_url": ""
+    }
+  },
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template",
+    "settings": {}
+  }
+}
