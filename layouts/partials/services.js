@@ -3,7 +3,7 @@ import { IoTabletLandscapeOutline } from "react-icons/io5";
 
 const Services = (props) => {
   return (
-    <div className="post mb-6 rounded-3xl bg-gray-900 shadow shadow-green-500/50 transition duration-300 ease-in hover:scale-105 ">
+    <div className="post mb-6 rounded-3xl shadow shadow-green-500/50 transition duration-300 ease-in hover:scale-105 ">
       <div className="relative flex flex-col items-center justify-around pt-6 ">
         <IoTabletLandscapeOutline
           className="rounded "
