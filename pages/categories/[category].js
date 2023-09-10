@@ -14,7 +14,7 @@ const Category = ({ postsByCategories, category, posts, categories }) => {
       <div className="section mt-16">
         <div className="container">
           <h1 className="h2 mb-12">
-            Showing posts from
+            التصنيف:
             <span className="section-title ml-1 inline-block capitalize">
               {category.replace("-", " ")}
             </span>
@@ -64,7 +64,7 @@ export const getStaticProps = ({ params }) => {
 
   const categoriesWithPostsCount = categories.map((category) => {
     const filteredPosts = posts.filter((post) =>
-      post.frontmatter.categories.map(e => slugify(e)).includes(category)
+      post.frontmatter.categories.map((e) => slugify(e)).includes(category)
     );
     return {
       name: category,

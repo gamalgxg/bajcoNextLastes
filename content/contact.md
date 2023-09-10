@@ -14,7 +14,7 @@ addresses:
     content: info@bajco-sa.com
     link: mailto:info@bajco-sa.com
   - icon: FaLocation
-    content: 9567 Turner Trace Apt. BC C3G8A4
+    content: الرياض, الملز
 
 draft: false
 ---
