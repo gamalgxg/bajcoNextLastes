@@ -11,7 +11,7 @@
   },
   "settings": {
     "theme_switcher": true,
-    "default_theme": "system",
+    "default_theme": "dark",
     "pagination": 6,
     "InnerPaginationOptions": {
       "enableTop": false,
@@ -23,7 +23,7 @@
   "params": {
     "tag_manager_id": "",
     "footer_content": "للديكورات والمغاسل الرخامية, تصميم وتنفيذ",
-    "copyright": "تصميم باجكو"
+    "copyright": "تصميم وتطوير باجكو"
   },
   "metadata": {
     "meta_author": "Admin",
