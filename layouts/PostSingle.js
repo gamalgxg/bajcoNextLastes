@@ -68,28 +68,6 @@ const PostSingle = ({
                       </li>
                     ))}
                   </ul>
-                </div>{" "}
-                <div className="relative pt-2">
-                  {image1 && (
-                    <Image
-                      src={image1}
-                      height="500"
-                      width="1000"
-                      alt={title}
-                      className="rounded-lg"
-                    />
-                  )}
-                </div>
-                <div className="relative pt-2">
-                  {image2 && (
-                    <Image
-                      src={image2}
-                      height="500"
-                      width="1000"
-                      alt={title}
-                      className="rounded-lg"
-                    />
-                  )}
                 </div>
                 {config.settings.InnerPaginationOptions.enableTop && (
                   <div className="mt-4">
@@ -102,7 +80,7 @@ const PostSingle = ({
                     <FaUserAlt className="mr-1.5 font-secondary text-xs leading-3" />
                     <Link
                       className="font-secondary text-xs leading-3"
-                      href="/about"
+                      href="/من-نحن"
                     >
                       {author}
                     </Link>
