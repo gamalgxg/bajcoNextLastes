@@ -15,10 +15,10 @@ const Services = (props) => {
         />
         <h2 className="pt-4 "> {props.title}</h2>
         <div className="px-6 pt-2 ">{props.desc}</div>
-        <Link className="btn btn-outline-primary mt-4  " href={props.url}>
+        <Link className="btn btn-outline-primary mb-8 mt-4" href={props.url}>
           {props.btn}
         </Link>
-        <p className="pb-6 pt-2">paragraph</p>
+        {/* <p className="pb-6 pt-2">paragraph</p> */}
       </div>
     </div>
   );
