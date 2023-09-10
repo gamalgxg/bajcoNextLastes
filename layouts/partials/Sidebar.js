@@ -198,10 +198,7 @@ const Sidebar = ({ posts, categories, className }) => {
           />
           <p className="text-xs">
             تطوير وبرمجة باجكو بواسطة :
-            <Link
-              href={newsletter.privacy_policy_page}
-              className="ml-1 text-primary"
-            >
+            <Link href="https://nextjs.org/" className="ml-1 text-primary">
               Next Js
             </Link>
           </p>

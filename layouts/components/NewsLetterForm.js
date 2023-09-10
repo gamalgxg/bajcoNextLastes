@@ -31,7 +31,7 @@ function CustomForm({ status, message, onValidated }) {
         </button>
       </form>
       {status === "sending" && (
-        <div className="mt-4 text-primary">sending...</div>
+        <div className="mt-4 text-primary">جار الارسال</div>
       )}
       {status === "error" && (
         <div
@@ -40,7 +40,7 @@ function CustomForm({ status, message, onValidated }) {
         />
       )}
       {status === "success" && (
-        <div className="mt-4 text-green-700">Subscribed !</div>
+        <div className="mt-4 text-green-700">تم الإشتراك !</div>
       )}
     </>
   );
