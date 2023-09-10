@@ -197,12 +197,12 @@ const Sidebar = ({ posts, categories, className }) => {
             )}
           />
           <p className="text-xs">
-            By Singing Up, You Agree To
+            تطوير وبرمجة باجكو بواسطة :
             <Link
               href={newsletter.privacy_policy_page}
               className="ml-1 text-primary"
             >
-              Privacy Policy
+              Next Js
             </Link>
           </p>
         </div>
