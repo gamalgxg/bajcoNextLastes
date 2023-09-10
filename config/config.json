@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "باجكو",
+    "title": "باجكو || تصميم وتنفيذ ديكورات ومغاسل رخام",
     "base_url": "/",
     "favicon": "/images/favicon.png",
     "logo": "/images/bajco_black.png",
@@ -26,9 +26,9 @@
     "copyright": "تصميم باجكو"
   },
   "metadata": {
-    "meta_author": "Statichunt",
+    "meta_author": "Admin",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Geeky Nextjs Personal Blog Template"
+    "meta_description": "تصميم وتنفيذ ديكورات ومغاسل رخام فخمه مع الخشب والمرايا, مع ضمان 5 سنوات على التنفيذ"
   },
   "widgets": {
     "about": {
