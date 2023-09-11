@@ -46,18 +46,19 @@ const Post = ({ post }) => {
             {post.frontmatter.title}
           </Link>
         </h3>
-        <div className="grid grid-cols-4 gap-4">
-          <p className="text-center"> النوع</p>
-          <p className="text-center">المقاس</p>
-          <p className="text-center">الحالة </p>
-          <p className="text-center">اللون </p>
+        {post.frontmatter.isPost?(<> <div className="grid grid-cols-4 gap-4">
+          <p className="text-center text-green-600"> النوع</p>
+          <p className="text-center text-green-600">المقاس</p>
+          <p className="text-center text-green-600">الحالة </p>
+          <p className="text-center text-green-600">اللون </p>
         </div>
-        <div className="grid grid-cols-4 gap-4">
-          <p className="text-center"> ({post.frontmatter.typeMarble}) </p>
-          <p className="text-center">({post.frontmatter.size}) سم </p>
-          <p className="text-center">({post.frontmatter.state}) </p>
-          <p className="text-center"> ({post.frontmatter.color})</p>
-        </div>
+          <div className="grid grid-cols-4 gap-4">
+            <p className="text-center "> ({post.frontmatter.typeMarble}) </p>
+            <p className="text-center ">({post.frontmatter.size}) سم </p>
+            <p className={`text-center ${post.frontmatter.state==='مكتملة'? `text-green-600`:post.frontmatter.state==='تصميم'?`text-orange-400`:`text-red-600`} `}>({post.frontmatter.state}) </p>
+            <p className="text-center "> ({post.frontmatter.color})</p>
+          </div> </>) : ''}
+
         {/* <ul className="flex items-center space-x-4 ">
           <li>
             <Link
