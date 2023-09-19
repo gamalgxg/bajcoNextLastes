@@ -21,10 +21,10 @@ const Post = ({ post }) => {
             height={208}
           />
         )}
-        <ul className="absolute left-2 top-3 flex flex-wrap items-center">
+        <ul className="absolute -top-3 left-1 flex flex-wrap items-center">
           {post.frontmatter.categories.map((tag, index) => (
             <li
-              className="mx-2 inline-flex h-7 rounded-[10px] bg-primary px-3 text-white"
+              className="mx-2 inline-flex h-7 rounded-lg bg-primary px-3 text-white"
               key={"tag-" + index}
             >
               <Link
@@ -67,13 +67,13 @@ const Post = ({ post }) => {
                     : `text-red-600`
                 } `}
               >
-                ({post.frontmatter.state}){" "}
+                ({post.frontmatter.state})
               </p>
-              <p className="text-center "> ({post.frontmatter.color})</p>
+              <p className=" text-center "> ({post.frontmatter.color})</p>
             </div>{" "}
           </>
         ) : (
-          ""
+          <span className=" rounded-lg bg-green-600 p-2 ">مقالة وصور </span>
         )}
 
         {/* <ul className="flex items-center space-x-4 ">
@@ -96,7 +96,7 @@ const Post = ({ post }) => {
           className="btn btn-outline-primary mt-4  "
           href={`/${blog_folder}/${post.slug}`}
         >
-          {post.frontmatter.title.slice(0, 15)}....
+          {post.frontmatter.title.slice(0, 20)}....
         </Link>
       </div>
     </div>

@@ -5,6 +5,7 @@ import { getSinglePage } from "@lib/contentParser";
 import { getTaxonomy } from "@lib/taxonomyParser";
 import { slugify } from "@lib/utils/textConverter";
 import Post from "@partials/Post";
+import Link from "next/link";
 const { blog_folder } = config.settings;
 
 // category page
@@ -13,13 +14,13 @@ const Category = ({ postsByCategories, category, posts, categories }) => {
     <Base title={category}>
       <div className="section mt-16">
         <div className="container">
-          <h1 className="h2 mb-12">
-            التصنيف:
-            <span className="section-title ml-1 inline-block capitalize">
+          <Link href="/categories" className="h2 mb-12">
+            التصنيفات:
+            <span className=" ml-2 rounded-lg bg-green-600 p-2">
               {category.replace("-", " ")}
             </span>
-          </h1>
-          <div className="row">
+          </Link>
+          <div className="row pt-3">
             <div className="lg:col-8">
               <div className="row rounded border border-border p-4 px-3 dark:border-darkmode-border lg:p-6">
                 {postsByCategories.map((post, i) => (
