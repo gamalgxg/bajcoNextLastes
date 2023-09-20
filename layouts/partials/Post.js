@@ -21,7 +21,7 @@ const Post = ({ post }) => {
             height={208}
           />
         )}
-        <ul className="absolute -top-3 left-1 flex flex-wrap items-center">
+        <ul className="absolute -left-3 -top-3 flex flex-wrap items-center">
           {post.frontmatter.categories.map((tag, index) => (
             <li
               className="mx-2 inline-flex h-7 rounded-lg bg-primary px-3 text-white"
